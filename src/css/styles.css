@@ -23,3 +23,90 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 10px);
+  box-sizing: border-box;
+}
+
+.gallery-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feedback-form {
+  width: 360px;
+  padding: 20px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: rgba(46, 47, 66, 1);
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.feedback-form input[type="email"] {
+  height: 40px;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.feedback-form button {
+  width: 95px;
+  height: 40px;
+  padding: 10px;
+  left: 28px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+  background: rgba(78, 117, 255, 1);
+  border-radius: 8px;
+  border: none;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background: rgba(108, 140, 255, 1);
+}
